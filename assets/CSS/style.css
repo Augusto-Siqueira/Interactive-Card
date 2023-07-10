@@ -1,0 +1,126 @@
+* { box-sizing:border-box}
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+body {
+    margin: 0px;
+    background-image: url(../images/bg-main-desktop.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'SpaceGrotesk';
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.register {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.cards {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.card-1 {
+    color: #ffff;
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    height: 40%;
+    width: 300px;
+    border-radius: 10px;
+    align-self: flex-start;
+    background-image: url(../images/bg-card-front.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .numbercard {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .namecard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card-2 {
+    color: #000;
+    height: 40%;
+    width: 300px;
+    align-self: flex-end;
+    border-radius: 10px;
+    background-image: url(../images/bg-card-back.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 40px;
+}
+  .info {
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info input {
+    border-radius: 3px;
+    height: 30px;
+  }
+  .info button {
+    background-color: #21092f;
+    color: #ffff;
+    border-radius: 10px;
+    height: 35px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .confirmation {
+    display: flex;
+  }
+  .description {
+    font-size: 10px;
+  }
+  .inputs-date {
+    display: flex;
+  }
+  
+  .inputs-date input {
+    margin-right: 15px;
+    width: 40px;
+    text-align: center;
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+  }
+  .cvc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }

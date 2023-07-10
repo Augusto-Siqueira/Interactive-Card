@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/CSS/style.css">
   
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -15,6 +16,50 @@
   </style>
 </head>
 <body>
+  <div class="register">
+    <div class="cards">
+      <div class="card-1">
+        <div class="numbercard">
+         <span>**** **** **** ****</span>
+        </div>
+        <div class="namecard">
+        <span>***</span>
+        <span>***</span>
+        </div>
+      </div>
+      <div class="card-2">
+        <span>***</span>
+      </div>
+    </div>
+    <div class="info">
+      <form action="">
+        <label>
+          <span>CARDHOLDER NAME:</span>
+          <input type="text" name="nome" placeholder="Full Name">
+        </label>
+        <label>
+          <span>CARD NUMBER:</span>
+          <input type="" name="number" placeholder="e.g. 1234 5678 9123 0000">
+        </label>
+        <label>
+          <div class="confirmation">
+            <div class="date">
+              <span class="description">EXP. DATE (MM/YY)</span>
+              <div class="inputs-date">
+                <input type="text" name="month" placeholder="month">
+                <input type="text" name="year" placeholder="YY">
+              </div>
+            </div>
+            <div class="cvc">
+              <span class="description">CVC</span>
+              <input type="" placeholder="e.g. 123">
+            </div>
+          </div>
+        </label>
+        <button>Confirm</button>
+      </form>
+    </div>
+  </div>
 
 
 </body>
