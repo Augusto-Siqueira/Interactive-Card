@@ -45,19 +45,19 @@ body {
     background-image: url(../images/bg-card-front.png);
     background-size: cover;
     background-position: center;
-  }
-  .numbercard {
+}
+.numbercard {
     display: flex;
     justify-content: start;
     align-items: center;
     margin-bottom: 10px;
-  }
-  .namecard {
+}
+.namecard {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .card-2 {
+}
+.card-2 {
     color: #000;
     height: 40%;
     width: 300px;
@@ -71,7 +71,7 @@ body {
     align-items: center;
     padding: 40px;
 }
-  .info {
+.info {
     width: 300px;
     height: 300px;
     margin-left: 100px;
@@ -79,48 +79,105 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .info input {
+    position: relative;
+}
+.info input {
     border-radius: 3px;
     height: 30px;
-  }
-  .info button {
+}
+.info button {
     background-color: #21092f;
     color: #ffff;
     border-radius: 10px;
     height: 35px;
-  }
-  form {
+}
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  label {
+}
+label {
     display: flex;
     flex-direction: column;
     margin: 10px;
-  }
-  .confirmation {
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.confirmation {
     display: flex;
-  }
-  .description {
+}
+.description {
     font-size: 10px;
-  }
-  .inputs-date {
+}
+.inputs-date {
     display: flex;
-  }
-  
-  .inputs-date input {
+}
+.inputs-date input {
     margin-right: 15px;
     width: 40px;
     text-align: center;
-  }
-  .date {
+}
+.date {
     display: flex;
     flex-direction: column;
-  }
-  .cvc {
+}
+.cvc {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+}
+/*Exibir result após a confirmação do cartão*/
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.result button {
+    background-color: #21092f;
+    color: #ffff;
+    border-radius: 10px;
+    height: 35px;
+}
+
+@media (min-width: 375px) {
+  body {
+    background-image: url(../images/bg-main-mobile.png);
   }
+
+  .register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 100%;
+  }
+  .cards {
+    width: 350px;
+    height: 350px;
+    justify-content: flex-start;
+    background-color: #21092f;
+  }
+
+  .card-1 {
+    order: 2;
+    height: 170px;
+    margin-top: -74px;
+  }
+
+  .card-2 {
+    height: 170px;
+  }
+
+  .info {
+    background-color: aqua;
+    margin-left: 0px;
+    width: 350px;
+    height: 350px;
+  }
+}
