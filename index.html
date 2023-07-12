@@ -19,12 +19,17 @@
   <div class="register">
     <div class="cards">
       <div class="card-1">
-        <div class="numbercard">
+        <div class="datacard">
          <span>**** **** **** ****</span>
         </div>
-        <div class="namecard">
-        <span>***</span>
-        <span>***</span>
+        <div class="datacard-2">
+          <div class="namecard">
+          <span>***</span>
+          </div>
+          <div class="expiration">
+            <span class="month">**</span>
+            <span class="year">**</span>
+          </div>
         </div>
       </div>
       <div class="card-2">
@@ -35,7 +40,7 @@
       <form action="">
         <label>
           <span>CARDHOLDER NAME:</span>
-          <input required type="text" name="nome" placeholder="Full Name">
+          <input required type="text" name="name" placeholder="Full Name">
         </label>
         <label>
           <span>CARD NUMBER:</span>
@@ -46,17 +51,17 @@
             <div class="date">
               <span class="description">EXP. DATE (MM/YY)</span>
               <div class="inputs-date">
-                <input required type="number" name="month" placeholder="month" maxlength="2">
+                <input required type="number" name="month" placeholder="M" maxlength="2">
                 <input required type="number" name="year" placeholder="YY" maxlength="2">
               </div>
             </div>
             <div class="cvc">
               <span class="description">CVC</span>
-              <input required type="number" placeholder="e.g. 123" minlength="3" maxlength="3">
+              <input required type="number" name="cvc" placeholder="e.g. 123" maxlength="3">
             </div>
           </div>
         </label>
-        <button>Confirm</button>
+        <button class="confirm">Confirm</button>
       </form>
     </div>
   </div>
@@ -64,7 +69,7 @@
     <img src="./assets/images/icon-complete.svg" alt="">
     <h2>THANK YOU!</h2>
     <h4>We've added your card details</h4>
-    <button>Continue</button>
+    <button class="continue">Continue</button>
   </div>
 
 <script src="./assets/JS/script.js"></script>

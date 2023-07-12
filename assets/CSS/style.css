@@ -46,11 +46,16 @@ body {
     background-size: cover;
     background-position: center;
 }
-.numbercard {
+.datacard {
     display: flex;
     justify-content: start;
     align-items: center;
     margin-bottom: 10px;
+}
+.datacard-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .namecard {
     display: flex;
@@ -135,6 +140,7 @@ input[type="number"]::-webkit-outer-spin-button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 500px;
     visibility: hidden;
 }
 .result button {
@@ -144,7 +150,7 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 35px;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   body {
     background-image: url(../images/bg-main-mobile.png);
   }
@@ -152,32 +158,39 @@ input[type="number"]::-webkit-outer-spin-button {
   .register {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: red;
-    width: 100%;
+    width: 325px;
+    height: 95%;
   }
   .cards {
-    width: 350px;
-    height: 350px;
-    justify-content: flex-start;
-    background-color: #21092f;
+    width: 300px;
+    height: 250px;
+    justify-content: flex-start;    
   }
 
   .card-1 {
     order: 2;
-    height: 170px;
-    margin-top: -74px;
+    width: 90%;
+    height: 150px;
+    margin-top: -60px;
   }
 
   .card-2 {
-    height: 170px;
+    width: 90%;
+    height: 150px;
   }
 
   .info {
-    background-color: aqua;
     margin-left: 0px;
-    width: 350px;
-    height: 350px;
+    width: 325px;
+    height: 275px;
+  }
+  /*Exibir result após a confirmação do cartão*/
+  .result {
+    visibility: visible;
+    margin-top: 180px;
+    margin-left: 0px;
+    visibility: hidden;
   }
 }
