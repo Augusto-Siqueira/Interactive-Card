@@ -25,61 +25,65 @@
 </head>
 
 <body>
-  <div class="register">
-    <div class="cards">
-      <div class="card-1">
-        <div class="datacard">
-          <span>**** **** **** ****</span>
+  <div class="container-1">
+    <div class="register">
+      <div class="cards">
+        <div class="card-1">
+          <div class="datacard">
+            <span>0000 0000 0000 0000</span>
+          </div>
+          <div class="datacard-2">
+            <div class="namecard">
+              <span></span>
+            </div>
+            <div class="expiration">
+              <span class="month">00</span>
+              <span class="year">00</span>
+            </div>
+          </div>
         </div>
-        <div class="datacard-2">
-          <div class="namecard">
-            <span>***</span>
-          </div>
-          <div class="expiration">
-            <span class="month">**</span>
-            <span class="year">**</span>
-          </div>
+        <div class="card-2">
+          <span>***</span>
         </div>
       </div>
-      <div class="card-2">
-        <span>***</span>
-      </div>
-    </div>
-    <div class="info">
-      <form action="">
-        <label>
-          <span>CARDHOLDER NAME:</span>
-          <input required type="text" name="name" placeholder="Full Name">
-        </label>
-        <label>
-          <span>CARD NUMBER:</span>
-          <input required type="number" name="number" placeholder="e.g. 1234 5678 9123 0000" maxlength="16"
-            minlength="16">
-        </label>
-        <label>
-          <div class="confirmation">
-            <div class="date">
-              <span class="description">EXP. DATE (MM/YY)</span>
-              <div class="inputs-date">
-                <input required type="number" name="month" placeholder="M" maxlength="2">
-                         <input required type="number" name="year" placeholder="YY" maxlength="2">
+      <div class="info">
+        <form action="">
+          <label>
+            <span>CARDHOLDER NAME:</span>
+            <input required type="text" name="name" placeholder="Full Name">
+          </label>
+          <label>
+            <span>CARD NUMBER:</span>
+            <input required type="number" name="number" placeholder="e.g. 1234 5678 9123 0000" maxlength="16"
+              minlength="16">
+          </label>
+          <label>
+            <div class="confirmation">
+              <div class="date">
+                <span class="description">EXP. DATE (MM/YY)</span>
+                <div class="inputs-date">
+                  <input required type="number" name="month" placeholder="M" maxlength="2">
+                          <input required type="number" name="year" placeholder="YY" maxlength="2">
+                </div>
+              </div>
+              <div class="cvc">
+                <span class="description">CVC</span>
+                <input required type="number" name="cvc" placeholder="e.g. 123" maxlength="3">
               </div>
             </div>
-            <div class="cvc">
-              <span class="description">CVC</span>
-              <input required type="number" name="cvc" placeholder="e.g. 123" maxlength="3">
-            </div>
-          </div>
-        </label>
-        <button class="confirm">Confirm</button>
-      </form>
+          </label>
+          <button class="confirm">Confirm</button>
+        </form>
+      </div>
     </div>
   </div>
-  <div class="result">
-    <img src="./assets/images/icon-complete.svg" alt="">
-    <h2>THANK YOU!</h2>
-    <h4>We've added your card details</h4>
-    <button class="continue">Continue</button>
+  <div class="container-2">
+    <div class="result">
+      <img src="./assets/images/icon-complete.svg" alt="">
+      <h2>THANK YOU!</h2>
+      <h4>We've added your card details</h4>
+      <button class="continue">Continue</button>
+    </div>
   </div>
 
   <script src="./assets/JS/script.js"></script>

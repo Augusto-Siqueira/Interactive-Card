@@ -7,11 +7,13 @@ const cardCvcInput = document.querySelector('input[name="cvc"]');
 
 const infoSection = document.querySelector(".info");
 const resultSection = document.querySelector(".result");
+const registerSection = document.querySelector(".register");
+const constainer1Section = document.querySelector(".container-1");
+const containerSection = document.querySelector(".container-2");
 
 //Selecionando os botões
 
 const confirmButton = document.querySelector(".confirm");
-const continueButton = document.querySelector(".continue");
 
 // Selecionar os elementos onde serão exibidos os valores do formulário
 const cardDataDisplay = document.querySelector(".card-1 .datacard span");
@@ -100,6 +102,29 @@ confirmButton.addEventListener("click", function (event) {
   }
 
   // Todas as condições foram atendidas, oculta a seção de informações e exibe a seção de resultado
-  infoSection.style.visibility = "hidden";
-  resultSection.style.visibility = "visible";
+  constainer1Section.style.display = "none";
+  containerSection.style.display = "block";
+});
+
+// Selecionar o botão "Continue"
+const continueButton = document.querySelector(".continue");
+
+// Adicionando evento de clique ao botão "continue"
+continueButton.addEventListener("click", function (event) {
+    // Limpa o valor dos inputs
+    cardDataInput.value = "";
+    cardNameInput.value = "";
+    cardMonthInput.value = "";
+    cardYearInput.value = "";
+    cardCvcInput.value = "";
+
+    // Atualiza os elementos de exibição chamando as funções correspondentes
+    updateCardData();
+    updateCardName();
+    updateExpirationDate();
+    updateCardCvc();
+
+    // Inverte a visibilidade das seções infoSection e resultSection
+    constainer1Section.style.display = "block";
+    containerSection.style.display = "none";
 });
