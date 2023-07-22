@@ -41,15 +41,15 @@ function updateCardData() {
 // Função para atualizar o nome no cartão
 function updateCardName() {
   const inputText = cardNameInput.value;
-  cardNameDisplay.textContent = inputText ? inputText.toUpperCase() : "***";
+  cardNameDisplay.textContent = inputText ? inputText.toUpperCase() : "";
 }
 
 // Função para atualizar a data de expiração do cartão
 function updateExpirationDate() {
   const monthValue = cardMonthInput.value.substring(0, 2);
   const yearValue = cardYearInput.value.substring(0, 2);
-  cardMonthDisplay.textContent = monthValue ? monthValue : "**";
-  cardYearDisplay.textContent = yearValue ? yearValue : "**";
+  cardMonthDisplay.textContent = monthValue ? monthValue : "00";
+  cardYearDisplay.textContent = yearValue ? yearValue : "00";
 }
 
 // Função para atualizar o CVC do cartão
