@@ -161,7 +161,7 @@ h4 {
   color:#7A687F;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body {
     background-image: url(../images/bg-main-mobile.png);
     background-position: left top;
